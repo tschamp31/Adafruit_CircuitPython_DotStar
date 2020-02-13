@@ -138,7 +138,7 @@ class DotStar(_pixelbuf.PixelBuf):
         if self._spi:
             self._spi.write(self._buf)
         else:
-            self.ds_writebytes()
+            self._ds_writebytes()
 
     def _ds_writebytes(self):
         for b in self.buf:
